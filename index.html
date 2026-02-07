@@ -6,6 +6,17 @@
     <title>Krishna Teja Sunkara| Lead Developer & AWS Architect</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: flex;
+        }
+    </style>
 </head>
 <body class="bg-[#0f172a] text-slate-300 font-sans selection:bg-blue-500/30">
 
@@ -15,71 +26,363 @@
                 SKT<span class="text-blue-500">.</span>INC
             </span>
             <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition text-slate-400">About</a>
                 <a href="#experience" class="hover:text-blue-400 transition text-slate-400">Experience</a>
                 <a href="#projects" class="hover:text-blue-400 transition text-slate-400">Projects</a>
+                <a href="#skills" class="hover:text-blue-400 transition text-slate-400">Skills</a>
                 <a href="#certs" class="hover:text-blue-400 transition text-slate-400">Certifications</a>
                 <a href="mailto:ktsunkara2014@gmail.com" class="border border-blue-500 text-blue-400 px-4 py-2 rounded-lg hover:bg-blue-500/10 transition">Contact</a>
             </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="mobile-menu flex-col space-y-4 px-6 pb-4 md:hidden">
+            <a href="#about" class="hover:text-blue-400 transition text-slate-400">About</a>
+            <a href="#experience" class="hover:text-blue-400 transition text-slate-400">Experience</a>
+            <a href="#projects" class="hover:text-blue-400 transition text-slate-400">Projects</a>
+            <a href="#skills" class="hover:text-blue-400 transition text-slate-400">Skills</a>
+            <a href="#certs" class="hover:text-blue-400 transition text-slate-400">Certifications</a>
+            <a href="mailto:ktsunkara2014@gmail.com" class="border border-blue-500 text-blue-400 px-4 py-2 rounded-lg hover:bg-blue-500/10 transition text-center">Contact</a>
         </div>
     </nav>
 
-    <div class="p-8 bg-[#1e293b] border border-slate-800 rounded-2xl shadow-xl">
-        <h3 class="text-xl font-bold text-white">Lead Developer @ Delta Airlines</h3>
-    </div>
-
-    <header class="max-w-5xl mx-auto px-6 py-20">
-        <h1 class="text-5xl font-extrabold mb-4">Krishna Teja Sunkara</h1>
-        <p class="text-2xl text-slate-600 mb-6">Lead Developer & AWS Certified Solutions Architect</p>
-        <p class="max-w-2xl text-lg text-slate-500 leading-relaxed">
-            12 years of experience building scalable distributed systems. Currently engineering high-uptime weather and meteorology applications at <strong>Delta Airlines</strong>. Specialist in AWS serverless architectures and cloud cost optimization.
-        </p>
-        <div class="mt-8 flex gap-4">
-            <a href="https://github.com/ktsunkara9" class="text-2xl hover:text-blue-600"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/ktsunkara" class="text-2xl hover:text-blue-600"><i class="fab fa-linkedin"></i></a>
+    <header id="about" class="max-w-5xl mx-auto px-6 py-20">
+        <div class="flex flex-col md:flex-row items-center md:items-start gap-8 mb-8">
+            <div class="flex-shrink-0">
+                <div class="w-40 h-40 md:w-48 md:h-48 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-1">
+                    <div class="w-full h-full rounded-full bg-[#0f172a] flex items-center justify-center border-4 border-slate-800">
+                        <i class="fas fa-user text-6xl text-slate-600"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white">Krishna Teja Sunkara</h1>
+                <p class="text-2xl md:text-3xl text-blue-400 mb-6 font-semibold">Lead Developer & AWS Certified Solutions Architect</p>
+                <p class="max-w-3xl text-lg text-slate-400 leading-relaxed mb-6">
+                    Engineering Leader with <strong class="text-white">12 years of experience</strong> building secure, scalable, cloud-native enterprise systems across <strong class="text-white">aviation, finance, and publishing</strong> domains. Currently engineering high-uptime weather and meteorology applications at <strong class="text-blue-400">Delta Airlines</strong>.
+                </p>
+            </div>
+        </div>
+        <div class="flex flex-wrap gap-4 mb-8 justify-center md:justify-start">
+            <span class="px-4 py-2 bg-blue-500/10 border border-blue-500/30 rounded-lg text-blue-400 text-sm">🎯 99.9% API Uptime</span>
+            <span class="px-4 py-2 bg-green-500/10 border border-green-500/30 rounded-lg text-green-400 text-sm">⚡ 50% Performance Boost</span>
+            <span class="px-4 py-2 bg-purple-500/10 border border-purple-500/30 rounded-lg text-purple-400 text-sm">💰 25% Cost Reduction</span>
+        </div>
+        <div class="flex flex-wrap gap-4 items-center justify-center md:justify-start">
+            <a href="https://github.com/ktsunkara9" target="_blank" class="text-2xl hover:text-blue-400 transition" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/ktsunkara" target="_blank" class="text-2xl hover:text-blue-400 transition" title="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:ktsunkara2014@gmail.com" class="text-2xl hover:text-blue-400 transition" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+918073108873" class="text-2xl hover:text-blue-400 transition" title="Phone">
+                <i class="fas fa-phone"></i>
+            </a>
         </div>
     </header>
 
-    <section id="experience" class="bg-white py-20">
+    <section id="experience" class="bg-[#1e293b] py-20">
         <div class="max-w-5xl mx-auto px-6">
-            <h2 class="text-3xl font-bold mb-12 border-l-4 border-blue-600 pl-4">Professional Impact</h2>
-            <div class="space-y-12">
-                <div>
-                    <h3 class="text-xl font-bold">Lead Developer @ Delta Airlines</h3>
-                    <p class="text-blue-600 mb-2">2023 — Present</p>
-                    <ul class="list-disc ml-5 text-slate-600 space-y-2">
-                        <li>Architected meteorology-based microservices with 99.9% uptime.</li>
-                        <li>Led FinOps initiatives reducing cloud waste by 25%.</li>
-                        <li>Implemented async processing for large-scale flight data.</li>
+            <h2 class="text-4xl font-bold mb-12 text-white">💼 Professional Experience</h2>
+            <div class="space-y-8">
+                <div class="p-8 bg-[#0f172a] border border-slate-700 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Lead Developer (Full Stack)</h3>
+                            <p class="text-blue-400 text-lg font-semibold">Delta Airlines</p>
+                        </div>
+                        <span class="text-slate-400 font-medium">Jun 2023 — Present</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Led a cross-functional team of <strong>8 engineers across US-India</strong>, owning system design, delivery, and production stability for mission-critical distributed APIs</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Delivered <strong>99.9% uptime</strong> by engineering failover mechanisms for distributed APIs, reducing incidents and improving reliability</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Drove cloud cost optimization (FinOps) by implementing DynamoDB TTL policies, re-architecting network data transfer paths, reducing non-production cloud spend by <strong>~25%</strong></span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Reduced security risk by integrating <strong>Veracode SAST/DAST/SCA</strong> into CI/CD, enabling early detection and fixing 100+ vulnerabilities</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Improved real-time dashboard performance by <strong>50%</strong> through RxJS optimization</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Cut API failures <strong>~30%</strong> by migrating on-prem services to AWS (API Gateway, Lambda) with modernized integrations</span></li>
+                    </ul>
+                </div>
+
+                <div class="p-8 bg-[#0f172a] border border-slate-700 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Technical Lead (Full Stack)</h3>
+                            <p class="text-blue-400 text-lg font-semibold">London Stock Exchange Group (LSEG)</p>
+                        </div>
+                        <span class="text-slate-400 font-medium">Jul 2022 — Jun 2023</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Led a team of <strong>10 engineers</strong> delivering Angular and Spring Boot applications in a globally distributed environment</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Implemented GitLab CI/CD pipelines, reducing manual release efforts by <strong>40%</strong> and enabling automated deployments</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Facilitated code reviews and technical interviews, raising code quality standards</span></li>
+                    </ul>
+                </div>
+
+                <div class="p-8 bg-[#0f172a] border border-slate-700 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Senior Full Stack Engineer</h3>
+                            <p class="text-blue-400 text-lg font-semibold">Taylor & Francis Group</p>
+                        </div>
+                        <span class="text-slate-400 font-medium">Jul 2021 — Jul 2022</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Developed Spring Boot REST APIs and integrated with publishing microservices for metadata, journal, and article transfer</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Implemented <strong>OAuth 2.0</strong> authentication, securing both user and API-to-API communications</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Utilized Aspose for DOC-to-PDF conversion, adding watermarks, headers, and pagination to manuscripts</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Improved system reliability by increasing test coverage to <strong>90%</strong></span></li>
+                    </ul>
+                </div>
+
+                <div class="p-8 bg-[#0f172a] border border-slate-700 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Senior Software Engineer</h3>
+                            <p class="text-blue-400 text-lg font-semibold">Refinitiv (acquired by LSEG)</p>
+                        </div>
+                        <span class="text-slate-400 font-medium">Apr 2018 — Jul 2021</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Built multi-threaded Java applications for high-volume, real-time data processing, integrating with <strong>InfluxDB</strong> for market data storage</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Introduced Docker, reducing local setup time by <strong>20%</strong> and simplifying onboarding</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Implemented JWT-based authentication strengthening security for web applications</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Built a multi-threaded REST client for parallel API calls, delivering <strong>~10× faster</strong> document processing</span></li>
+                    </ul>
+                </div>
+
+                <div class="p-8 bg-[#0f172a] border border-slate-700 rounded-2xl hover:border-blue-500/50 transition">
+                    <div class="flex flex-wrap justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">QA Engineer / Senior QA Engineer</h3>
+                            <p class="text-blue-400 text-lg font-semibold">Thomson Reuters</p>
+                        </div>
+                        <span class="text-slate-400 font-medium">Apr 2014 — Apr 2018</span>
+                    </div>
+                    <ul class="space-y-3 text-slate-300">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3">▹</span><span>Achieved <strong>100% automation</strong> for SDI and database comparison testing using Java and Selenium, reducing regression cycle time by <strong>60%</strong></span></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="certs" class="py-20 max-w-5xl mx-auto px-6">
-        <h2 class="text-3xl font-bold mb-8">AWS Certifications</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-                <i class="fas fa-cloud text-orange-500 text-3xl mb-4"></i>
-                <h4 class="font-bold">Solutions Architect</h4>
-                <p class="text-sm text-slate-500">Associate Level</p>
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-12 text-white border-l-4 border-blue-500 pl-4">Featured Projects</h2>
+        <div class="space-y-8">
+            <div class="p-8 bg-[#1e293b] border border-slate-800 rounded-2xl hover:border-blue-500/50 transition">
+                <h3 class="text-2xl font-bold text-white mb-2">FICON – Field Conditions & Weather Systems</h3>
+                <p class="text-blue-400 mb-4">Delta Airlines</p>
+                <p class="text-slate-400 mb-4">
+                    Mission-critical weather and meteorology application serving Delta's flight operations. Implemented failover mechanisms ensuring 99.9% uptime for distributed APIs handling real-time weather data for flight safety decisions.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">AWS Lambda</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">API Gateway</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">DynamoDB</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Spring Boot</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Angular</span>
+                </div>
             </div>
-            <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-                <i class="fas fa-code text-blue-500 text-3xl mb-4"></i>
-                <h4 class="font-bold">Developer Associate</h4>
-                <p class="text-sm text-slate-500">AWS Certified</p>
+
+            <div class="p-8 bg-[#1e293b] border border-slate-800 rounded-2xl hover:border-blue-500/50 transition">
+                <h3 class="text-2xl font-bold text-white mb-2">Forest Spirit</h3>
+                <p class="text-blue-400 mb-4">London Stock Exchange Group (LSEG)</p>
+                <p class="text-slate-400 mb-4">
+                    Built Docker-based local setup, Angular UIs, and a multi-threaded REST client for parallel ML API calls. Explored Amazon Textract (POC) and delivered a custom PDF-to-HTML pipeline for paragraph-level document AI processing.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">AWS Textract</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Docker</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Angular</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Multi-threading</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">ML APIs</span>
+                </div>
             </div>
-            <div class="p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
-                <i class="fas fa-robot text-purple-500 text-3xl mb-4"></i>
-                <h4 class="font-bold">AI Practitioner</h4>
-                <p class="text-sm text-slate-500">Certified AI Specialist</p>
+
+            <div class="p-8 bg-[#1e293b] border border-slate-800 rounded-2xl hover:border-blue-500/50 transition">
+                <h3 class="text-2xl font-bold text-white mb-2">Dynamic Submission Web V2</h3>
+                <p class="text-blue-400 mb-4">Taylor & Francis Group</p>
+                <p class="text-slate-400 mb-4">
+                    Global manuscript submission platform serving researchers and journal editors. Built Angular 12 UIs, Spring Boot APIs, and Aspose-based PDF processing with OAuth 2.0 authentication for secure document handling.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Angular 12</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Spring Boot</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">OAuth 2.0</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Aspose</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">PDF Processing</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-[#1e293b] border border-slate-800 rounded-2xl hover:border-blue-500/50 transition">
+                <h3 class="text-2xl font-bold text-white mb-2">Fast Tick</h3>
+                <p class="text-blue-400 mb-4">Refinitiv (now LSEG)</p>
+                <p class="text-slate-400 mb-4">
+                    Designed microservices leveraging Akka actor model and deployed on AWS ECS to process intraday quote data and corporate actions files. Built multi-threaded Java pipeline for high-frequency and multi-GB historical datasets, integrating with InfluxDB and AWS S3. Outputs powered Refinitiv Eikon for global traders.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">AWS ECS</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Akka</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">InfluxDB</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">S3</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Multi-threading</span>
+                </div>
+            </div>
+
+            <div class="p-8 bg-[#1e293b] border border-slate-800 rounded-2xl hover:border-blue-500/50 transition">
+                <h3 class="text-2xl font-bold text-white mb-2">Corporate Actions Master</h3>
+                <p class="text-blue-400 mb-4">Refinitiv QA</p>
+                <p class="text-slate-400 mb-4">
+                    Achieved 100% test automation in SDI & DB comparison testing using Java. Automated UI testing with Selenium, significantly reducing regression cycles by 60%.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Java</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Selenium</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">Test Automation</span>
+                    <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-md text-sm">JUnit</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="text-center py-10 text-slate-400 text-sm">
-        &copy; 2026 Krishna Teja. Built with Tailwind CSS & GitHub Pages.
+    <section id="skills" class="max-w-5xl mx-auto px-6 py-20">
+        <h2 class="text-4xl font-bold mb-12 text-white">🛠️ Tech Stack</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-2xl">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center">
+                    <i class="fas fa-code mr-3"></i>Languages & Frameworks
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Java 17+</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Python</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">TypeScript</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">SQL</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Spring Boot</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Angular 12+</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">FastAPI</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">RxJS</span>
+                </div>
+            </div>
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-2xl">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center">
+                    <i class="fas fa-cloud mr-3"></i>Cloud & DevOps
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">AWS Lambda</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">API Gateway</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">DynamoDB</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">ECS</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">S3</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">CloudWatch</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Docker</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">GitLab CI/CD</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">CloudFormation</span>
+                </div>
+            </div>
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-2xl">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center">
+                    <i class="fas fa-database mr-3"></i>Databases
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">DynamoDB</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">MySQL</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">MongoDB</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">InfluxDB</span>
+                </div>
+            </div>
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-2xl">
+                <h3 class="text-xl font-semibold text-blue-400 mb-4 flex items-center">
+                    <i class="fas fa-robot mr-3"></i>AI & Engineering Tools
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">AWS Textract</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Amazon Q</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Microsoft Copilot</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Veracode</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">JIRA</span>
+                    <span class="px-4 py-2 bg-slate-800 border border-slate-700 rounded-lg text-sm hover:border-blue-500/50 transition">Confluence</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certs" class="bg-[#1e293b] py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-8 text-white border-l-4 border-blue-500 pl-4">AWS Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-[#0f172a] border border-slate-800 rounded-xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-cloud text-orange-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-white">Solutions Architect</h4>
+                    <p class="text-sm text-slate-400">Associate Level</p>
+                </div>
+                <div class="p-6 bg-[#0f172a] border border-slate-800 rounded-xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-code text-blue-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-white">Developer Associate</h4>
+                    <p class="text-sm text-slate-400">AWS Certified</p>
+                </div>
+                <div class="p-6 bg-[#0f172a] border border-slate-800 rounded-xl hover:border-blue-500/50 transition">
+                    <i class="fas fa-robot text-purple-500 text-3xl mb-4"></i>
+                    <h4 class="font-bold text-white">AI Practitioner</h4>
+                    <p class="text-sm text-slate-400">Certified AI Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="max-w-5xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold mb-12 text-white border-l-4 border-blue-500 pl-4">Key Achievements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-xl text-center">
+                <div class="text-4xl font-bold text-blue-400 mb-2">99.9%</div>
+                <p class="text-slate-400">API Uptime</p>
+            </div>
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-xl text-center">
+                <div class="text-4xl font-bold text-blue-400 mb-2">50%</div>
+                <p class="text-slate-400">UI Performance Boost</p>
+            </div>
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-xl text-center">
+                <div class="text-4xl font-bold text-blue-400 mb-2">25%</div>
+                <p class="text-slate-400">Cloud Cost Reduction</p>
+            </div>
+            <div class="p-6 bg-[#1e293b] border border-slate-800 rounded-xl text-center">
+                <div class="text-4xl font-bold text-blue-400 mb-2">10×</div>
+                <p class="text-slate-400">Faster Processing</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center py-10 text-slate-400 text-sm border-t border-slate-800">
+        <p>&copy; 2026 Krishna Teja Sunkara. Built with Tailwind CSS & GitHub Pages.</p>
+        <p class="mt-2">Bengaluru, India | Open to Relocation</p>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+            });
+        });
+    </script>
 
 </body>
 </html>
