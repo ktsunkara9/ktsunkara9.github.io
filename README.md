@@ -1,5 +1,5 @@
 # ktsunkara9.github.io
-Portfolio of Krishna Teja Sunkara – Engineering Manager & AWS Solutions Architect specializing in Scalable Distributed Systems and Cloud Optimization.
+Portfolio of Krishna Teja Sunkara – Lead Developer & AWS Solutions Architect specializing in Scalable Distributed Systems and Cloud Optimization.
 
 ## 🚀 Live Site
 [https://ktsunkara9.github.io/](https://ktsunkara9.github.io/)
